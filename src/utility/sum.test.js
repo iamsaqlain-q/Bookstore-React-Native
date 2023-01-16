@@ -1,5 +1,23 @@
 const sum = require('./sum');
+const dataBeforeSum = require('./dataBeforeSum');
+const dataAfterSum = require('./dataAfterSum');
 
-test('adds 1 + 2 to equal 3', () => {
+beforeEach(() => {
+  console.log(dataBeforeSum());
+});
+
+afterEach(() => {
+  console.log(dataAfterSum());
+});
+
+test('testing sum 1', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+test('testing sum 2', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+
+test('testing sum 3', () => {
   expect(sum(1, 2)).toBe(3);
 });

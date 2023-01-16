@@ -5,9 +5,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useSelector } from 'react-redux';
 import Colors from '../constants/Colors';
 
-const Header = ({navigation, props}) => {
+const Header = ({navigation}) => {
   const cart = useSelector(state => state.cart.cart);
-  //console.log('props', cart);
+  //console.log('header', cart);
   return (
     <View style={styles.headerContainer}>
       <View style={styles.logoIcon}>

@@ -28,15 +28,15 @@ const ShoppingCart = ({navigation, route}) => {
       <ScrollView>
         <View style={styles.cartContainer}>
           <View>
-            <Text style={styles.mycart}>My cart(2)</Text>
+            <Text style={styles.mycart}>My cart({orderList.length})</Text>
           </View>
           <View>
             {orderList.map(item => (
-              <View style={styles.rowView} key={item.id}>
+              <View style={[styles.rowView, {marginBottom: 5}]} key={item.id}>
                 <View style={styles.rowView}>
                   <Image
                     source={{uri: item.imageLink}}
-                    style={{width: 100, height: 150}}
+                    style={styles.bookImage}
                   />
                 </View>
                 <View>
@@ -87,22 +87,41 @@ const ShoppingCart = ({navigation, route}) => {
         <View style={styles.customerContainer}>
           <Text style={styles.customerText}>Order Summary</Text>
           {showCustomerForm ? (
-            <View style={styles.rowView}>
-              <View style={styles.columnView}>
-                <Image
-                  source={require('../assets/dontmakemethink.jpg')}
-                  style={{width: 100, height: 150}}
-                />
-              </View>
-              <View>
-                <View style={{margin: 15}}>
-                  <Text style={{color: '#000'}}>Don't Make Me Think</Text>
-                  <Text style={{color: Colors.cardBackground}}>
-                    by Steve Krug
-                  </Text>
-                  <Text style={styles.priceTxt}>Rs 1500</Text>
+            <View>
+              {orderList.map(item => (
+                <View style={[styles.rowView, {marginBottom: 5}]} key={item.id}>
+                  <View style={styles.rowView}>
+                    <Image
+                      source={{uri: item.imageLink}}
+                      style={styles.bookImage}
+                    />
+                  </View>
+                  <View>
+                    <View style={{margin: 15}}>
+                      <Text style={{color: '#000'}}>{item.title}</Text>
+                      <Text style={{color: Colors.cardBackground}}>
+                        {item.author}
+                      </Text>
+                      <Text style={styles.priceTxt}>{item.price}</Text>
+                    </View>
+                    <View style={styles.rowView}>
+                      <TouchableOpacity>
+                        <View style={styles.roundBtn}>
+                          <Text style={styles.roundBtnText}>-</Text>
+                        </View>
+                      </TouchableOpacity>
+                      <View style={styles.countView}>
+                        <Text style={styles.roundBtnText}>1</Text>
+                      </View>
+                      <TouchableOpacity>
+                        <View style={styles.roundBtn}>
+                          <Text style={styles.roundBtnText}>+</Text>
+                        </View>
+                      </TouchableOpacity>
+                    </View>
+                  </View>
                 </View>
-              </View>
+              ))}
             </View>
           ) : null}
           <View>
@@ -132,6 +151,11 @@ const styles = StyleSheet.create({
   homeContainer: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  bookImage: {
+    width: 100,
+    height: 150,
+    borderRadius: 5,
   },
   bookTxt: {
     color: '#fff',

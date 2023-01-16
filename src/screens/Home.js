@@ -9,7 +9,7 @@ const Home = ({navigation}) => {
   return (
     <View style={styles.homeContainer}>
       <View style={styles.header}>
-        <Header navigation={navigation}/>
+        <Header navigation={navigation} />
       </View>
       <View style={styles.dropdown}>
         <View>
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
   },
   dropdown: {
     //flex:1,
+    marginTop: 10,
     marginHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',
@@ -55,6 +56,6 @@ const styles = StyleSheet.create({
     flex: 0.7,
   },
   header: {
-    flex: 1,
+    // flex: 1,
   },
 });
