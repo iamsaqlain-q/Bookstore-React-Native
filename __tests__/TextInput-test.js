@@ -10,6 +10,6 @@ const Example = () => {
 test('TextInput test', () => {
   const {getByTestId} = render(<Example />);
   const input = getByTestId('input');
-  fireEvent.changeText(input, '123');
-  expect(input.props.value).toBe('123');
+  fireEvent.changeText(input, 'abc@gmail.com');
+  expect(input.props.value).toBe('abc@gmail.com');
 });

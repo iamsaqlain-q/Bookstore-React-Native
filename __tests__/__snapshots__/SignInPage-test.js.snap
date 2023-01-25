@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFC0CB",
+        "borderRadius": 30,
+        "height": 45,
+        "marginBottom": 20,
+        "width": "70%",
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Email."
+      placeholderTextColor="#003f5c"
+      style={
+        {
+          "flex": 1,
+          "height": 50,
+          "marginLeft": 20,
+          "padding": 10,
+        }
+      }
+      testID="emailInput"
+    />
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFC0CB",
+        "borderRadius": 30,
+        "height": 45,
+        "marginBottom": 20,
+        "width": "70%",
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Password."
+      placeholderTextColor="#003f5c"
+      secureTextEntry={true}
+      style={
+        {
+          "flex": 1,
+          "height": 50,
+          "marginLeft": 20,
+          "padding": 10,
+        }
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "height": 30,
+          "marginBottom": 30,
+        }
+      }
+    >
+      Forgot Password?
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FF1493",
+        "borderRadius": 25,
+        "height": 50,
+        "justifyContent": "center",
+        "marginTop": 40,
+        "opacity": 1,
+        "width": "80%",
+      }
+    }
+  >
+    <Text>
+      SignIn
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders SignIn 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFC0CB",
+        "borderRadius": 30,
+        "height": 45,
+        "marginBottom": 20,
+        "width": "70%",
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Email."
+      placeholderTextColor="#003f5c"
+      style={
+        {
+          "flex": 1,
+          "height": 50,
+          "marginLeft": 20,
+          "padding": 10,
+        }
+      }
+      testID="emailInput"
+    />
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFC0CB",
+        "borderRadius": 30,
+        "height": 45,
+        "marginBottom": 20,
+        "width": "70%",
+      }
+    }
+  >
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Password."
+      placeholderTextColor="#003f5c"
+      secureTextEntry={true}
+      style={
+        {
+          "flex": 1,
+          "height": 50,
+          "marginLeft": 20,
+          "padding": 10,
+        }
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "height": 30,
+          "marginBottom": 30,
+        }
+      }
+    >
+      Forgot Password?
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FF1493",
+        "borderRadius": 25,
+        "height": 50,
+        "justifyContent": "center",
+        "marginTop": 40,
+        "opacity": 1,
+        "width": "80%",
+      }
+    }
+  >
+    <Text>
+      SignIn
+    </Text>
+  </View>
+</View>
+`;
