@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, TextInput, StyleSheet} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { useSelector } from 'react-redux';
+import {useSelector} from 'react-redux';
 import Colors from '../constants/Colors';
 
 const Header = ({navigation}) => {
@@ -42,7 +42,7 @@ export default Header;
 const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Colors.mainBackground,
     width: '100%',
@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
 
   logoIcon: {
     width: '7%',
-    marginLeft: 10,
   },
 
   logoText: {

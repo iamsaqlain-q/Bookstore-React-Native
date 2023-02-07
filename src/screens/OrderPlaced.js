@@ -55,6 +55,13 @@ const OrderPlaced = ({navigation}) => {
             }}>
             <Text style={styles.orderText}>Continue Shopping</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.placeOrder}
+            onPress={() => {
+              navigation.navigate('LinkingScreen');
+            }}>
+            <Text style={styles.orderText}>Linking Screen</Text>
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.bottom}>

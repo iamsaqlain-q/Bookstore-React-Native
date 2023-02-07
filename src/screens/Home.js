@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   dropdown: {
     //flex:1,
-    marginTop: 10,
+    marginTop: 5,
     marginHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',

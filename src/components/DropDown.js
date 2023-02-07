@@ -24,9 +24,9 @@ const DropDown = () => {
       <View style={styles.rowView}>
         <Text style={styles.dropDownText}>Sort by relevence</Text>
         <TouchableOpacity
-          style={{justifyContent: 'center'}}
+          style={{justifyContent: 'center', marginBottom: 2}}
           onPress={handleDownArrow}>
-          <Icon name="chevron-down" size={25} color="#999" />
+          <Icon name="chevron-down" size={23} color="#999"/>
         </TouchableOpacity>
       </View>
       {showAccordion && (
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 0,
     borderWidth: 1,
     borderColor: Colors.cardBackground,
-    marginTop: 4,
+    marginTop: 6,
   },
   sortText: {
     marginVertical: 5,
@@ -62,8 +62,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   dropdownContainer: {
+    padding:5,
     flexDirection: 'column',
-    width: 150,
+    width: '100%',
     height: 30,
     borderWidth: 1,
     borderColor: Colors.cardBackground,
