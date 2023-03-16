@@ -4,13 +4,14 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useSelector} from 'react-redux';
 import Colors from '../constants/Colors';
+import {useOrientation} from '../hooks/useOrientation';
 
 const Header = ({navigation}) => {
   const cart = useSelector(state => state.cart.cart);
-  //console.log('header', cart);
+  const isPortrait = useOrientation() === 'portrait';
   return (
     <View style={styles.headerContainer}>
-      <View style={styles.logoIcon}>
+      <View style={[styles.logoIcon, {paddingLeft: isPortrait ? 0 : '3%'}]}>
         <Ionicons name="book-outline" size={20} color="#fff" />
       </View>
       <View>

@@ -6,7 +6,6 @@ import Colors from '../constants/Colors';
 import {addToCart} from '../redux/CartReducer';
 
 const BookCard = props => {
-  //console.log('Item in BookCard', props);
   const [changeAddToBag, setChangeAddToBag] = useState(true);
   const dispatch = useDispatch();
 

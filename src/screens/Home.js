@@ -22,9 +22,6 @@ const Home = ({navigation}) => {
       <View style={styles.cards}>
         <CardBox />
       </View>
-      {/* <View style={styles.bottom}>
-        <BottomPages navigation={navigation} />
-      </View> */}
     </View>
   );
 };
@@ -41,7 +38,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   dropdown: {
-    //flex:1,
     marginTop: 5,
     marginHorizontal: 10,
     flexDirection: 'row',
@@ -55,7 +51,5 @@ const styles = StyleSheet.create({
   bottom: {
     flex: 0.7,
   },
-  header: {
-    // flex: 1,
-  },
+  header: {},
 });

@@ -10,7 +10,7 @@ import OrderPlaced from './src/screens/OrderPlaced';
 
 const App = () => {
   const linking = {
-    prefixes: ['bookstore://app', 'https://www.example.com'],
+    prefixes: ['bookstore://app', 'https://reactnative.dev/'],
     config: {
       screens: {
         Home: 'homescreen',
